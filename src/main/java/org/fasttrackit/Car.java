@@ -1,6 +1,6 @@
 package org.fasttrackit;
 //inheritance or "is-a" relationship
-public class car extends Vehicle{
+public class Car extends AutoVehicle {
 
 
     //instance variables
