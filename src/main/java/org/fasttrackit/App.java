@@ -75,7 +75,7 @@ public class App
 
         System.out.println("Modulo example: ");
         System.out.println(4 % 3);
-        System.out.println(4 % 2);
+        System.out.println(4 % 3);
         System.out.println(4 % 2 == 0);
 
 //    example for NullPointerEXception
