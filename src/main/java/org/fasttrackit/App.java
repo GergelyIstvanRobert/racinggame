@@ -73,6 +73,11 @@ public class App
         System.out.println("car2 name: "+ car2.name);
         System.out.println("car3 name: "+ car3.name);
 
+        System.out.println("Modulo example: ");
+        System.out.println(4 % 3);
+        System.out.println(4 % 2);
+        System.out.println(4 % 2 == 0);
+
 //    example for NullPointerEXception
 //     car car4 = null;
 //     System.out.println("car4.name")
