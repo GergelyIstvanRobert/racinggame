@@ -1,7 +1,7 @@
 package org.fasttrackit;
 
 public class Vehicle {
-
+//  instance variables
     String name;
     String color;
     double mileage;
@@ -12,6 +12,8 @@ public class Vehicle {
 
     public double accelerate(double speed,double durationInHours) {
         System.out.println(name + " is accelerating whit " + speed + "for" + durationInHours + "h.");
+//        local variables
+
 
         double distance = speed * durationInHours;
 
