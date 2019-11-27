@@ -7,11 +7,12 @@ import java.util.Scanner;
 public class Game {
 
     public void start() {
+
         System.out.println("Starting game...");
         String vehicleName = getVehicleNameFromUser();
         System.out.println("Name from user:" + vehicleName);
         int playerCount = getPlayersCountFromUser();
-        System.out.println("Number of player:" + getPlayersCountFromUser());
+        System.out.println("Number of player:" + playerCount);
 
     }
 
