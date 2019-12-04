@@ -15,13 +15,17 @@ public class App
 
         Game game = new Game();
         game.start();
+        //method implementation taken from object class,not from variable class
 
-        JokerVehicle joker = new JokerVehicle();
+        Vehicle joker = new JokerVehicle();
         joker.setName("Joker");
         joker.setFuelLevel(80);
 
         joker.accelerate(60,1);
         System.out.println("Joker distance : " + joker.getTraveledDistance());
+
+        //variable class determines what methods can be invoked type casting
+        ((JokerVehicle) joker).fly();
 
         Car carWhitdefaultEngine = new Car();
 

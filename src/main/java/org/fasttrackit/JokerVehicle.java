@@ -18,4 +18,7 @@ public class JokerVehicle extends Vehicle {
          return new JokerVehicle();
     }
     //return  new JokerVehicle ();
+    public void fly () {
+        System.out.println("Flying!!!");
+    }
 }
