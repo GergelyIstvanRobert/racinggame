@@ -17,19 +17,44 @@ public class Game {
     public void start() {
         initializeTrakcs();
         displayTracks();
+        Track selectedTrack = getSelectedTrackFromUser();
 
         initializeCompetitors();
 
 //enhanced for
         for (Vehicle vehicle : competitors) {
-            System.out.println("It`s" + vehicle.getName() + "`s turn. ");
+            System.out.println("It`s " + vehicle.getName() + "`s turn. ");
+            double speed = getAccelerationSpeedFromUser();
+
+            vehicle.accelerate(speed);
+
+            if (vehicle.getTraveledDistance() <= selectedTrack.getLength()){
+                System.out.println("The winner is " + vehicle.getName() + "!");
+                break;
+            }
         }
 
-        System.out.println("Starting game...");
-        String vehicleName = getVehicleNameFromUser();
-        System.out.println("Name from user:" + vehicleName);
 
 
+
+
+    }
+
+    private double getAccelerationSpeedFromUser(){
+        System.out.println("Please enter acceleration speed.");
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextDouble();
+
+    }
+    private Track getSelectedTrackFromUser () {
+        System.out.println("Please select track number.");
+        Scanner scanner = new Scanner(System.in);
+        int selectedTrackNumer = scanner.nextInt();
+
+        Track selectedTrack = tracks[selectedTrackNumer - 1];
+
+        System.out.println("Selected track is " + selectedTrack.getName());
+        return tracks[selectedTrackNumer -1];
     }
     private void  initializeTrakcs () {
         Track track1 = new Track();
