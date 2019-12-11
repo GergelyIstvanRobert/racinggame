@@ -15,6 +15,10 @@ public class App
 
         Game game = new Game();
         game.start();
+
+
+
+
 //        //method implementation taken from object class,not from variable class
 //
 //        Vehicle joker = new JokerVehicle();
